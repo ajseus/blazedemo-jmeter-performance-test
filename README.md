@@ -103,6 +103,13 @@ git remote add origin https://github.com/SEU_USUARIO/blazedemo-jmeter-performanc
 git push -u origin main
 ```
 
-## Link do repositório
+## Resultado da execução - Teste de carga
 
-Depois de criar no GitHub, cole o link público no formulário do teste.
+- Throughput médio: 243.99 req/s
+- p90: 1434.90 ms
+- Taxa de erro: 0.00%
+- Tempo médio: 646.72 ms
+
+## Conclusão
+
+O sistema apresentou estabilidade durante a execução, com 0% de erros e p90 abaixo de 2 segundos. No entanto, o throughput médio consolidado ficou ligeiramente abaixo da meta de 250 req/s. Dessa forma, o critério de aceitação foi parcialmente atendido: o requisito de latência foi cumprido, mas a vazão mínima não foi sustentada de forma consistente ao longo de toda a execução.
